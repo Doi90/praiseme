@@ -19,9 +19,7 @@
 praise <- function(name = "AAAAAAAAA",
                    punctuation = "!!!!!!!"){
 
-  tmp <- sprintf("You're the best, %1$s%2$s",
-                 name,
-                 punctuation)
+  tmp <- glue::glue("You're the best, {name}{punctuation}")
 
   return(tmp)
 
